@@ -1,0 +1,51 @@
+﻿<Page x:Class="FHHelper.View.Pages.TrainersListPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FHHelper.View.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="700" d:DesignWidth="1250"
+      Title="TrainersListPage">
+
+    <Grid Margin="0,0,760,640">
+        <TextBox Margin="60,50,-60,-50"
+                 Name="TrainerTb"
+                 FontSize="30"
+                 VerticalContentAlignment="Center"
+                 TextChanged="TrainerTb_TextChanged"
+                 GotFocus="TrainerTb_GotFocus"
+                 LostFocus="TrainerTb_LostFocus"
+                 Text="Введите ник"
+                 Foreground="Gray"/>
+
+        <ComboBox Margin="680,50,-680,-50"
+                  Name="CharacterCmb"
+                  DisplayMemberPath="Name"
+                  SelectionChanged="CharacterCmb_SelectionChanged"
+                  FontSize="30"
+                  HorizontalContentAlignment="Center"
+                  VerticalContentAlignment="Center"/>
+
+        <ListView Margin="60,186,-680,-574"
+                  Name="TrainersLv"
+                  Background="#aaaaac"
+                  FontSize="30"
+                  SelectionChanged="TrainersLv_SelectionChanged">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Тренер"
+                                    DisplayMemberBinding="{Binding NickName}"
+                                    Width="370"/>
+                    <GridViewColumn Header="Рейтинг"
+                                    DisplayMemberBinding="{Binding Raiting}"
+                                    Width="360"/>
+                    <GridViewColumn Header="Мейн"
+                                    DisplayMemberBinding="{Binding Characters.Name}"
+                                    Width="370"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+    </Grid>
+</Page>

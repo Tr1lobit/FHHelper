@@ -1,0 +1,103 @@
+﻿<Page x:Class="FHHelper.View.Pages.RegistrationPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FHHelper.View.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="700" d:DesignWidth="1250"
+      Title="RegistrationPage">
+
+    <Grid>
+        <TextBox Width="600"
+                 Height="70" Margin="321,139,329,491"
+                 x:Name="NickTb"
+                 FontSize="45"
+                 VerticalContentAlignment="Center"
+                 HorizontalContentAlignment="Center"
+                 Text="Введите ник"
+                 Foreground="Gray"
+                 GotFocus="NickTb_GotFocus"
+                 LostFocus="NickTb_LostFocus"/>
+
+        <TextBox Width="600"
+                 Height="70" Margin="321,244,329,386"
+                 x:Name="NickUbisoft"
+                 FontSize="45"
+                 VerticalContentAlignment="Center"
+                 HorizontalContentAlignment="Center"
+                 Text="Ник UbisoftConnect"
+                 Foreground="Gray"
+                 GotFocus="NickUbisoft_GotFocus"
+                 LostFocus="NickUbisoft_LostFocus"/>
+
+        <PasswordBox Width="600"
+                     Height="70" Margin="321,350,329,280"
+                     x:Name="NewPasswordPb"
+                     VerticalContentAlignment="Center"
+                     HorizontalContentAlignment="Center"
+                     FontSize="45"
+                     GotFocus="NewPasswordPb_GotFocus"
+                     LostFocus="NewPasswordPb_LostFocus"/>
+
+        <TextBlock x:Name="NewPasswordText"
+                   Text="Введите пароль"
+                   Foreground="Gray"
+                   FontSize="45" Margin="453,350,453,276"
+                   IsHitTestVisible="False"/>
+
+        <PasswordBox Width="600"
+                     Height="70" Margin="321,461,329,169"
+                     x:Name="RepeatPasswordPb"
+                     VerticalContentAlignment="Center"
+                     HorizontalContentAlignment="Center"
+                     FontSize="45"
+                     GotFocus="RepeatPasswordPb_GotFocus"
+                     LostFocus="RepeatPasswordPb_LostFocus"/>
+
+        <TextBlock x:Name="RepeatPasswordText"
+                   Text="Повторите пароль"
+                   Foreground="Gray"
+                   FontSize="45" Margin="420,461,428,165"
+                   IsHitTestVisible="False"/>
+
+        <Button x:Name="RegistrationBtn" Margin="410,613,410,10"
+                Content="Зарегистрироваться"
+                FontSize="45"
+                Click="RegistrationBtn_Click">
+            <UIElement.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </UIElement.RenderTransform>
+        </Button>
+
+        <TextBlock Text="Регистрация"
+                   FontSize="80"
+                   Foreground="#f1f1f1" Margin="387,0,387,594"/>
+
+        <Button Margin="376,555,681,111"
+                Name="UserBtn"
+                Click="UserBtn_Click"
+                Opacity="0"/>
+        <Button Margin="741,552,401,114"
+                Name="TrainerBtn"
+                Click="TrainerBtn_Click"
+                Opacity="0"/>
+        <TextBlock Margin="376,549,681,111"
+                   Text="Пользователь"
+                   TextDecorations="Underline"
+                   FontSize="30"
+                   Foreground="#808080"
+                   IsHitTestVisible="False"
+                   Name="UserTbl"/>
+        <TextBlock Text="Тренер"
+                   FontSize="30"
+                   Foreground="#808080" Margin="744,544,401,106"
+                   IsHitTestVisible="False"
+                   Name="TrainerTbl"/>
+    </Grid>
+</Page>

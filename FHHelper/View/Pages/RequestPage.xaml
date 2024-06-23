@@ -1,0 +1,41 @@
+﻿<Page x:Class="FHHelper.View.Pages.RequestPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FHHelper.View.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="700" d:DesignWidth="1250"
+      Title="RequestPage">
+
+    <Grid>
+        <TextBlock FontSize="40" Margin="41,36,829,584">
+            <Run Text="Ник:"/>
+            <Run Text="{Binding NickName}"/>
+        </TextBlock>
+        
+        <TextBlock FontSize="40" Margin="490,36,380,584">
+            <Run Text="Рейтинг:"/>
+            <Run Text="{Binding Raiting}"/>
+        </TextBlock>
+        
+        <TextBlock FontSize="40" Margin="870,36,0,584">
+            <Run Text="Мейн:"/>
+            <Run Text="{Binding Characters.Name}"/>
+        </TextBlock>
+
+        <Border CornerRadius="40" BorderThickness="1" Background="#aaaaac" Margin="236,142,236,142"/>
+
+        <TextBox Margin="262,170,260,165"
+                     Background="Transparent"
+                     FontSize="35"
+                     Name="RequestTb"
+                     TextWrapping="Wrap"/>
+
+        <Button Margin="445,592,445,32"
+                Content="Отправить"
+                FontSize="35"
+                Name="RequestBtn"
+                Click="RequestBtn_Click"/>
+    </Grid>
+</Page>

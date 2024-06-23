@@ -1,0 +1,73 @@
+﻿<Page x:Class="FHHelper.View.Pages.MapsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FHHelper.View.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="700" d:DesignWidth="1250"
+      Title="MapsPage">
+
+    <Grid>
+        <TextBlock Text="Карты"
+                   Foreground="#dfdbdb"
+                   FontSize="90" Margin="497,10,497,574"/>
+
+
+        <Button Margin="180,150,870,350">
+            <Image Source="/Resources/Maps/Canyon_Map1.jpg" Stretch="UniformToFill" />
+        </Button>
+
+        <TextBlock Text="Каньен"
+                   FontSize="40"
+                   Foreground="#dfdbdb" Margin="212,342,902,299"/>
+
+        <Button Margin="180,426,870,74"
+                Name="cathedralMapBtn"
+                Click="cathedralMapBtn_Click">
+            <Image Source="/Resources/Maps/Cathedral_-_knight_map.jpg" Stretch="UniformToFill" />
+
+        </Button>
+
+        <TextBlock Text="Порт"
+                   FontSize="40"
+                   Foreground="#dfdbdb" Margin="928,617,228,28"/>
+
+        <Button Margin="525,150,525,350">
+            <Image Source="/Resources/Maps/Forge.jpg" Stretch="UniformToFill" />
+
+        </Button>
+
+        <TextBlock Text="Застава"
+                   FontSize="40"
+                   Foreground="#dfdbdb" Margin="547,615,547,26"/>
+
+        <Button Margin="525,426,525,74">
+            <Image Source="/Resources/Maps/Overwatch.jpg" Stretch="UniformToFill" />
+
+        </Button>
+
+        <TextBlock Text="Священный мост"
+                   FontSize="40"
+                   Foreground="#dfdbdb" Margin="815,342,115,293"/>
+
+        <Button Margin="875,150,175,350">
+            <Image Source="/Resources/Maps/SanctuaryBridge.jpg" Stretch="UniformToFill" />
+
+        </Button>
+
+        <TextBlock Text="Крепость"
+                   FontSize="40"
+                   Foreground="#dfdbdb" Margin="536,342,536,301"/>
+
+        <Button Margin="875,426,175,74">
+            <Image Source="/Resources/Maps/Shipyard.jpg" Stretch="UniformToFill" />
+
+        </Button>
+
+        <TextBlock Text="Собор"
+                   FontSize="40"
+                   Foreground="#dfdbdb" Margin="220,617,910,32"/>
+
+    </Grid>
+</Page>

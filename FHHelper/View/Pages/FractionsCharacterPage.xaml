@@ -1,0 +1,58 @@
+﻿<Page x:Class="FHHelper.View.Pages.FractionsCharacterPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FHHelper.View.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="700" d:DesignWidth="1250"
+      Title="FractionsCharacterPage">
+
+    <Grid>
+        <TextBlock Text="Чужеземцы"
+           FontSize="80"
+           Foreground="#f1f1f1" Margin="406,10,406,584"/>
+
+        <Button Margin="70,131,849,48"
+                Background="Transparent"
+                Name="PirateBtn"
+                BorderThickness="0"
+                Click="PirateBtn_Click">
+            <StackPanel>
+                <Image Source="/Resources/Characters/Pirate.png" />
+                <TextBlock Text="Пират"
+                           FontSize="40"
+                           HorizontalAlignment="Center"
+                           Foreground="#d5d5d5"/>
+
+            </StackPanel>
+        </Button>
+
+        <Button Margin="434,131,391,48"
+                Background="Transparent"
+                Name="MedjaiBtn"
+                BorderThickness="0">
+            <StackPanel Height="531">
+                <Image Source="/Resources/Characters/Medjay.png" Height="468" Width="423" />
+                <TextBlock Text="Миджаи"
+                           FontSize="40"
+                           HorizontalAlignment="Center"
+                           Foreground="#d5d5d5"/>
+
+            </StackPanel>
+        </Button>
+
+        <Button Margin="859,131,21,12"
+                Background="Transparent"
+                Name="AfeeraBtn"
+                BorderThickness="0">
+            <StackPanel Height="526" Width="352">
+                <Image Source="/Resources/Characters/Afeera.png" RenderTransformOrigin="0.506,0.321" Width="316" />
+                <TextBlock Text="Афира"
+                           FontSize="40"
+                           Foreground="#d5d5d5" Width="122"/>
+
+            </StackPanel>
+        </Button>
+    </Grid>
+</Page>

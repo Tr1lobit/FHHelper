@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="62469cec9c3c49b1863854b6daf3eb57" Name="Diagram1">
+        <EntityTypeShape EntityType="FHHelperDBModel.CharacterMovelists" Width="1.5" PointX="5.25" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="FHHelperDBModel.Characters" Width="1.5" PointX="3" PointY="11.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="FHHelperDBModel.CharactersMaps" Width="1.5" PointX="5.25" PointY="14.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="FHHelperDBModel.CharactersMechanics" Width="1.5" PointX="8.25" PointY="12.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="FHHelperDBModel.CharPictures" Width="1.5" PointX="5.25" PointY="18.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="FHHelperDBModel.Comments" Width="1.5" PointX="10.5" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FHHelperDBModel.Fractions" Width="1.5" PointX="0.75" PointY="12.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="FHHelperDBModel.History" Width="1.5" PointX="12.75" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="FHHelperDBModel.MapPictures" Width="1.5" PointX="5.25" PointY="22.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="FHHelperDBModel.Maps" Width="1.5" PointX="3" PointY="16" IsExpanded="true" />
+        <EntityTypeShape EntityType="FHHelperDBModel.OtherMechanics" Width="1.5" PointX="6" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="FHHelperDBModel.Requests" Width="1.5" PointX="10.5" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="FHHelperDBModel.Roles" Width="1.5" PointX="6" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FHHelperDBModel.Trainings" Width="1.5" PointX="10.5" PointY="14.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FHHelperDBModel.Users" Width="1.5" PointX="8.25" PointY="7" IsExpanded="true" />
+        <AssociationConnector Association="FHHelperDBModel.FK_CharacterMovelists_Characters" ManuallyRouted="false" />
+        <AssociationConnector Association="FHHelperDBModel.FK_Characters_Fractions" ManuallyRouted="false" />
+        <AssociationConnector Association="FHHelperDBModel.FK_CharactersMaps_Characters" ManuallyRouted="false" />
+        <AssociationConnector Association="FHHelperDBModel.FK_CharactersMechanics_Characters" ManuallyRouted="false" />
+        <AssociationConnector Association="FHHelperDBModel.FK_CharPictures_Characters" ManuallyRouted="false" />
+        <AssociationConnector Association="FHHelperDBModel.FK_Users_Characters" ManuallyRouted="false" />
+        <AssociationConnector Association="FHHelperDBModel.FK_CharactersMaps_Maps" ManuallyRouted="false" />
+        <AssociationConnector Association="FHHelperDBModel.FK_CharactersMechanics_OtherMechanics" ManuallyRouted="false" />
+        <AssociationConnector Association="FHHelperDBModel.FK_Comments_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="FHHelperDBModel.FK_Comments_Users1" ManuallyRouted="false" />
+        <AssociationConnector Association="FHHelperDBModel.FK_History_Trainings" ManuallyRouted="false" />
+        <AssociationConnector Association="FHHelperDBModel.FK_History_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="FHHelperDBModel.FK_MapPictures_Maps" ManuallyRouted="false" />
+        <AssociationConnector Association="FHHelperDBModel.FK_Requests_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="FHHelperDBModel.FK_Requests_Users1" ManuallyRouted="false" />
+        <AssociationConnector Association="FHHelperDBModel.FK_Users_Roles" ManuallyRouted="false" />
+        <AssociationConnector Association="FHHelperDBModel.FK_Trainings_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="FHHelperDBModel.FK_Trainings_Users1" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

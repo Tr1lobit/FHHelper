@@ -1,0 +1,28 @@
+﻿<Page x:Class="FHHelper.View.Pages.StattSelectPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FHHelper.View.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="700" d:DesignWidth="1250"
+      Title="StattSelectPage">
+
+
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+        <Button Name="LibraryBtn"
+                Click="LibraryBtn_Click">
+            <Image Source="/Resources/Main1.png" />
+        </Button>
+        <Button Name="TrainingBtn"
+                Grid.Column="1"
+                Click="TrainingBtn_Click">
+            <Image Source="/Resources/Main2.png" />
+        </Button>
+    </Grid>
+</Page>

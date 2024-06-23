@@ -1,0 +1,48 @@
+﻿<Page x:Class="FHHelper.View.Pages.MapPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FHHelper.View.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="700" d:DesignWidth="1250"
+      Title="MapPage">
+
+    <Grid>
+        <TextBlock Text="Собор"
+            Foreground="#dfdbdb"
+            FontSize="90" Margin="489,10,489,574"/>
+        <Button Margin="323,171,740,495"
+                Opacity="0"/>
+        <Button Margin="700,164,294,488"
+            x:Name="TrainerBtn"
+            Opacity="0"/>
+        <TextBlock Margin="346,157,749,483"
+            Text="О карте"
+            TextDecorations="Underline"
+            FontSize="40"
+            Foreground="#808080"
+            IsHitTestVisible="False"/>
+        <TextBlock Text="Изображения"
+            FontSize="40"
+            Foreground="#808080" Margin="700,154,280,488"
+            IsHitTestVisible="False"
+            x:Name="TrainerTbl"/>
+
+        <Border CornerRadius="40" BorderThickness="1" Background="#aaaaac" Margin="244,250,228,35"/>
+
+
+        <ScrollViewer CanContentScroll="True"
+                      VerticalScrollBarVisibility="Hidden" Margin="274,298,266,81">
+            <TextBlock  
+                   Text="Вся карта вращается вокруг собора, в честь которого названа карта. Внутри собора находится длинная и высокая открытая площадка с большой статуей, посвященной лорду древности, времен, когда Эшфельд был разделен между лордами и дамами, а также балконом, выстилающим внутреннюю часть. К этому балкону ведут лестницы, стремянки и разрушенные откосы. Зажатый между склоном холма и скалой, собор также находится между сломанным мостом спереди и кладбищем сзади. На склоне скалы собора есть каменный балкон, который находится в руинах, поэтому проход между передней и задней частью здания лучше сделать на склоне холма.
+
+Уникальностью этой карты являются гейзеры, извергающиеся на кладбище. Они окружают большое дерево, которое находится посреди всех гробниц и могил, эти гейзеры периодически взрываются. Воинам лучше быть осторожными, находясь рядом с одним из них, поскольку, находясь сверху, когда он извергается, он мгновенно убьет их. Однако лужи, которые они оставляют, безвредны."
+                   TextWrapping="Wrap"
+                   FontSize="20" Height="435" Width="694"/>
+        </ScrollViewer>
+
+
+
+    </Grid>
+</Page>

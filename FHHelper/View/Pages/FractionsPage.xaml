@@ -1,0 +1,86 @@
+﻿<Page x:Class="FHHelper.View.Pages.FractionsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FHHelper.View.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="700" d:DesignWidth="1250"
+      Title="FractionsPage">
+
+    <Grid>
+        <Button Name="KnightsBtn" 
+                Margin="282,54,678,350"
+                Background="Transparent"
+                BorderThickness="0"
+                Click="KnightsBtn_Click">
+            <StackPanel>
+                <Image Source="/Resources/Fractions/Knight_Symbol.png" 
+                       Height="226" Width="254" />
+                <TextBlock Text="Рыцари"
+                           Foreground="#d5d5d5"
+                           FontSize="40" Height="59" Width="142"/>
+
+            </StackPanel>
+        </Button>
+
+        <Button Margin="692,82,282,350"
+                Background="Transparent"
+                BorderThickness="0"
+                Name="VikingBtn"
+                Click="VikingBtn_Click">
+            <StackPanel Width="246">
+                <Image Source="/Resources/Fractions/FH_Warborn_Faction.png" 
+                       Height="196" Width="240"/>
+
+                <TextBlock Text="Викинги"
+               Foreground="#d5d5d5"
+               FontSize="40" Height="59" Width="152"/>
+            </StackPanel>
+        </Button>
+
+        <Button Margin="486,363,486,41"
+                Background="Transparent"
+                BorderThickness="0"
+                Name="SamuraiBtn"
+                Click="SamuraiBtn_Click">
+            <StackPanel Width="246">
+                <Image Source="/Resources/Fractions/Samurai_Symbol.png" 
+                       Height="224" Width="240"/>
+                <TextBlock Text="Самураи"
+                           Foreground="#d5d5d5"
+                           FontSize="40" Height="59" Width="164"/>
+            </StackPanel>
+        </Button>
+
+        <Button Margin="100,386,882,33"
+                Background="Transparent"
+                BorderThickness="0"
+                Name="WuLinBtn"
+                Click="WuLinBtn_Click">
+            <StackPanel Width="246">
+                <Image Source="/Resources/Fractions/WuLin.png"
+                       Height="196" Width="240"/>
+
+                <TextBlock Text="ВуЛинь"
+                           Foreground="#d5d5d5"
+                           FontSize="40" Height="59" Width="140"/>
+            </StackPanel>
+        </Button>
+
+        <Button Margin="902,384,80,34"
+                Background="Transparent"
+                BorderThickness="0"
+                Name="OutlandersBtn"
+                Click="OutlandersBtn_Click">
+            <StackPanel Width="246">
+                <Image Source="/Resources/Fractions/Outlander_Symbol.png"
+                       Height="196" Width="240"/>
+
+                <TextBlock Text="Чужеземцы"
+                           Foreground="#d5d5d5"
+                           FontSize="40" Height="59" Width="216"/>
+            </StackPanel>
+        </Button>
+    </Grid>
+</Page>

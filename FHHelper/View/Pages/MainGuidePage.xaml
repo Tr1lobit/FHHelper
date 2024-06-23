@@ -1,0 +1,35 @@
+﻿<Page x:Class="FHHelper.View.Pages.MainGuidePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FHHelper.View.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="700" d:DesignWidth="1250"
+      Title="MainGuidePage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+        
+        <Button x:Name="MapsBtn"
+                Click="MapsBtn_Click">
+            <Image Source="/Resources/Maps.png" />
+        </Button>
+
+        <Button Grid.Row="1"
+                Name="CharactersBtn"
+                Click="CharactersBtn_Click">
+            <Image Source="/Resources/Characters.png" />
+        </Button>
+
+        <Button Grid.Row="2"
+                Name="OtherMechBtn"
+                Click="OtherMechBtn_Click">
+            <Image Source="/Resources/Other.png" />
+        </Button>
+    </Grid>
+</Page>
